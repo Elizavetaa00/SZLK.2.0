@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - СЗЛК ПРОИЗВОДСТВО</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="assets/image/logo.png" alt="СЗЛК ПРОИЗВОДСТВО" class="logo-img">
+                <div class="logo-text">
+                    <h1>СЗЛК Производство</h1>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="mainMenu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="catalog.html" class="nav-link active">Каталог</a></li>
+                    <li><a href="services.html" class="nav-link">Услуги</a></li>
+                    <li><a href="about.html" class="nav-link">О компании</a></li>
+                    <li><a href="clients.html" class="nav-link">Клиенты</a></li>
+                    <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                    <li><a href="registration.html" class="nav-link">Заявка</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Мобильное меню -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="catalog.html" class="nav-link active">Каталог</a>
+            <a href="services.html" class="nav-link">Услуги</a>
+            <a href="about.html" class="nav-link">О компании</a>
+            <a href="clients.html" class="nav-link">Клиенты</a>
+            <a href="contacts.html" class="nav-link">Контакты</a>
+            <a href="registration.html" class="nav-link">Заявка</a>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ol>
+                <li><a href="index.html">Главная</a></li>
+                <li class="separator">/</li>
+                <li class="current">Каталог</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Главный контент -->
+    <main>
+        <div class="container">
+            <!-- Заголовок страницы -->
+            <div class="catalog-header">
+                <h1>Каталог продукции</h1>
+                <p>Каталог продукции компании СЗЛК ПРОИЗВОДСТВО включает широкий ассортимент деталей, изготавливаемых на собственном производстве с использованием современного металлообрабатывающего, термического и специального оборудования, позволяющего обеспечить высокое качество изделия. У каждого изделия есть свой номер, при заказе изделия в отделе продаж ориентируйтесь на номенклатуру, представленную в каталоге.</p>
+            </div>
+
+            <!-- Категории каталога (только 2 категории) -->
+            <div class="catalog-categories">
+                <!-- Категория 1: Запасные части к насосному оборудованию гидроразрыва пласта -->
+                <div class="category-main-card">
+                    <a href="catalog-category.html?cat=nasosnoe" class="category-link">
+                        <div class="category-main-image">
+                            <img src="assets/image/4.png" alt="Насосное оборудование">
+                            <div class="category-main-overlay">
+                                <h2>Запасные части к насосному оборудованию гидроразрыва пласта</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Категория 2: Соединительная и запорная арматура -->
+                <div class="category-main-card">
+                    <a href="catalog-category-armatura.html" class="category-link">
+                        <div class="category-main-image">
+                            <img src="assets/image/5.png" alt="Запорная арматура">
+                            <div class="category-main-overlay">
+                                <h2>Соединительная и запорная арматура</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ООО "СЗЛК Производство"</h3>
+                    <p>Профессиональная механическая обработка металлических изделий и поставка запасных частей для нефтегазового оборудования с 2016 года.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Нефтеюганск, ул. Мира, стр. 8/1</p>
+                    <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@szlk-production.ru</p>
+                    <p><i class="fas fa-clock"></i> Пн-Пт: 9:00 - 18:00</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Быстрые ссылки</h3>
+                    <a href="index.html">Главная</a>
+                    <a href="catalog.html">Каталог</a>
+                    <a href="services.html">Услуги</a>
+                    <a href="about.html">О компании</a>
+                    <a href="clients.html">Клиенты</a>
+                    <a href="contacts.html">Контакты</a>
+                    <a href="registration.html">Заявка</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2016–2025 ООО "СЗЛК Производство". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

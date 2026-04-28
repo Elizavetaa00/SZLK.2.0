@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка для обратной связи - ООО "СЗЛК Производство"</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="assets/image/logo.png" alt="СЗЛК ПРОИЗВОДСТВО" class="logo-img">
+                <div class="logo-text">
+                    <h1>СЗЛК Производство</h1>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="mainMenu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="catalog.html" class="nav-link">Каталог</a></li>
+                    <li><a href="services.html" class="nav-link">Услуги</a></li>
+                    <li><a href="about.html" class="nav-link">О компании</a></li>
+                    <li><a href="clients.html" class="nav-link">Клиенты</a></li>
+                    <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                    <li><a href="registration.html" class="nav-link active">Заявка</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Мобильное меню -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="catalog.html" class="nav-link">Каталог</a>
+            <a href="services.html" class="nav-link">Услуги</a>
+            <a href="about.html" class="nav-link">О компании</a>
+            <a href="clients.html" class="nav-link">Клиенты</a>
+            <a href="contacts.html" class="nav-link">Контакты</a>
+            <a href="registration.html" class="nav-link active">Заявка</a>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ol>
+                <li><a href="index.html">Главная</a></li>
+                <li class="separator">/</li>
+                <li class="current">Заявка</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Главный контент -->
+    <main>
+        <div class="container">
+            <div class="section-title">
+                <h2>Заявка для обратной связи</h2>
+                <p>Заполните форму для сотрудничества с нашей компанией</p>
+            </div>
+
+            <!-- Форма регистрации -->
+            <section>
+                <div class="registration-form">
+                    <form id="registrationForm">
+                        <div id="formMessage"></div>
+                        
+                        <div class="form-group">
+                            <label for="registrationType" class="required">Тип заявки</label>
+                            <select id="registrationType" name="registrationType" class="form-control" required>
+                                <option value="">Выберите тип заявки</option>
+                                <option value="client">Клиент</option>
+                                <option value="supplier">Поставщик</option>
+                                <option value="partner">Партнер</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactPerson" class="required">Контактное лицо</label>
+                            <input type="text" id="contactPerson" name="contactPerson" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="required">Телефон</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required placeholder="+7 (___) ___-__-__">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="required">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Дополнительная информация</label>
+                            <textarea id="message" name="message" class="form-control" rows="4" placeholder="Опишите цели сотрудничества или задайте вопросы"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="agreement" required>
+                                Я согласен с <a href="#" onclick="showPrivacyPolicy()">политикой конфиденциальности</a> и обработкой персональных данных
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                <i class="fas fa-paper-plane"></i> Отправить заявку
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div class="privacy-policy">
+                        <p><strong>Политика конфиденциальности:</strong> Мы гарантируем конфиденциальность предоставленных данных и используем их исключительно для целей сотрудничества. Ваши данные не будут переданы третьим лицам без вашего согласия.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ООО "СЗЛК Производство"</h3>
+                    <p>Профессиональная механическая обработка металлических изделий и поставка запасных частей для нефтегазового оборудования с 2016 года.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Нефтеюганск, ул. Мира, стр. 8/1</p>
+                    <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@szlk-production.ru</p>
+                    <p><i class="fas fa-clock"></i> Пн-Пт: 9:00 - 18:00</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Быстрые ссылки</h3>
+                    <a href="index.html">Главная</a>
+                    <a href="catalog.html">Каталог</a>
+                    <a href="services.html">Услуги</a>
+                    <a href="about.html">О компании</a>
+                    <a href="clients.html">Клиенты</a>
+                    <a href="contacts.html">Контакты</a>
+                    <a href="registration.html">Заявка</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2016–2025 ООО "СЗЛК Производство". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function showPrivacyPolicy() {
+            alert('Политика конфиденциальности:\n\nМы гарантируем конфиденциальность предоставленных данных и используем их исключительно для целей сотрудничества. Ваши данные не будут переданы третьим лицам без вашего согласия.\n\nВсе данные хранятся в зашифрованном виде и защищены в соответствии с Федеральным законом №152-ФЗ "О персональных данных".');
+        }
+        
+        // Маска для телефона
+        document.addEventListener('DOMContentLoaded', function() {
+            const phoneInput = document.getElementById('phone');
+            if (phoneInput) {
+                phoneInput.addEventListener('input', function(e) {
+                    let value = e.target.value.replace(/\D/g, '');
+                    
+                    if (value.length > 11) {
+                        value = value.slice(0, 11);
+                    }
+                    
+                    if (value.length > 0) {
+                        let formatted = '+7';
+                        
+                        if (value.length > 1) {
+                            formatted += ' (' + value.slice(1, 4);
+                        }
+                        if (value.length > 4) {
+                            formatted += ') ' + value.slice(4, 7);
+                        }
+                        if (value.length > 7) {
+                            formatted += '-' + value.slice(7, 9);
+                        }
+                        if (value.length > 9) {
+                            formatted += '-' + value.slice(9, 11);
+                        }
+                        
+                        e.target.value = formatted;
+                    } else {
+                        e.target.value = '';
+                    }
+                });
+            }
+            
+            // Отправка формы через AJAX
+            const form = document.getElementById('registrationForm');
+            if (form) {
+                form.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    
+                    // Сбор данных формы
+                    const formData = {
+                        registrationType: document.getElementById('registrationType').value,
+                        contactPerson: document.getElementById('contactPerson').value,
+                        phone: document.getElementById('phone').value,
+                        email: document.getElementById('email').value,
+                        message: document.getElementById('message').value
+                    };
+                    
+                    // Базовая валидация
+                    if (!formData.registrationType || !formData.contactPerson || !formData.phone || !formData.email) {
+                        showMessage('formMessage', 'Пожалуйста, заполните все обязательные поля', 'error');
+                        return;
+                    }
+                    
+                    // Валидация телефона
+                    const phoneDigits = formData.phone.replace(/\D/g, '');
+                    if (phoneDigits.length < 10) {
+                        showMessage('formMessage', 'Введите корректный номер телефона (минимум 10 цифр)', 'error');
+                        return;
+                    }
+                    
+                    // Валидация email
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(formData.email)) {
+                        showMessage('formMessage', 'Введите корректный email адрес', 'error');
+                        return;
+                    }
+                    
+                    // Проверка согласия
+                    const agreement = document.querySelector('input[name="agreement"]');
+                    if (!agreement.checked) {
+                        showMessage('formMessage', 'Необходимо согласиться с политикой конфиденциальности', 'error');
+                        return;
+                    }
+                    
+                    // Отправка данных
+                    const submitBtn = form.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.innerHTML;
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Отправка...';
+                    submitBtn.disabled = true;
+                    
+                    try {
+                        const response = await fetch('api/submit.php', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(formData)
+                        });
+                        
+                        const result = await response.json();
+                        
+                        if (result.success) {
+                            showMessage('formMessage', result.message, 'success');
+                            form.reset();
+                        } else {
+                            showMessage('formMessage', result.errors.join(', '), 'error');
+                        }
+                    } catch (error) {
+                        console.error('Ошибка:', error);
+                        showMessage('formMessage', 'Произошла ошибка при отправке. Пожалуйста, попробуйте позже.', 'error');
+                    } finally {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                    }
+                });
+            }
+        });
+        
+        function showMessage(elementId, message, type) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.innerHTML = `
+                    <div class="form-message ${type}">
+                        <p><i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-circle'}"></i> ${message}</p>
+                    </div>
+                `;
+                element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                
+                if (type === 'success') {
+                    setTimeout(() => {
+                        element.innerHTML = '';
+                    }, 5000);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
