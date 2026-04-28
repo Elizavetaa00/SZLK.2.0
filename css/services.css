@@ -1,0 +1,522 @@
+/* services.css - стили для страницы услуг */
+:root {
+    --black: #000000;
+    --black-light: #333333;
+    --red: #ff0000;
+    --red-dark: #cc0000;
+    --white: #ffffff;
+    --gray-light: #f5f5f5;
+    --gray: #e0e0e0;
+    --gray-dark: #666666;
+    --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 8px 30px rgba(255, 0, 0, 0.1);
+    --shadow-lg: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок страницы */
+.services-header {
+    padding: 40px 0 20px;
+    text-align: center;
+}
+
+.services-main-title {
+    font-size: 2.8rem;
+    color: var(--black);
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.title-highlight {
+    color: var(--red);
+    position: relative;
+    display: inline-block;
+}
+
+.services-description {
+    color: var(--gray-dark);
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Категории услуг */
+.services-categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 50px 0;
+}
+
+.category-card {
+    background: var(--white);
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s;
+    border: 1px solid var(--gray);
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--red);
+}
+
+.category-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--red);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.category-info h3 {
+    font-size: 1.2rem;
+    color: var(--black);
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.category-info p {
+    color: var(--gray-dark);
+    font-size: 0.95rem;
+}
+
+/* Основные услуги */
+.premium-services {
+    margin: 80px 0;
+}
+
+.section-label {
+    text-align: center;
+    color: var(--red);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 50px;
+    font-weight: 800;
+}
+
+.premium-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.premium-service-card {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.4s;
+    border: 1px solid var(--gray);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.premium-service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--red);
+}
+
+.premium-card-header {
+    padding: 35px 30px 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--gray);
+}
+
+.premium-card-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--red);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: var(--white);
+    font-size: 2.5rem;
+}
+
+.premium-card-header h3 {
+    font-size: 1.5rem;
+    color: var(--black);
+    font-weight: 800;
+    margin: 0;
+}
+
+.premium-card-content {
+    padding: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.premium-card-content p {
+    color: var(--gray-dark);
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.features-title {
+    color: var(--black);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.premium-feature-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.premium-feature-list li {
+    padding: 8px 0;
+    color: var(--gray-dark);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+}
+
+.premium-feature-list li i {
+    color: var(--red);
+    font-size: 1.1rem;
+}
+
+.premium-feature-list.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 15px;
+}
+
+/* Процесс таймлайн */
+.process-timeline {
+    margin: 20px 0 0;
+}
+
+.process-step {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px dashed var(--gray);
+}
+
+.process-step:last-child {
+    border-bottom: none;
+}
+
+.step-number {
+    width: 35px;
+    height: 35px;
+    background: var(--red);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.step-info h5 {
+    color: var(--black);
+    font-size: 1rem;
+    margin-bottom: 3px;
+    font-weight: 700;
+}
+
+.step-info p {
+    color: var(--gray-dark);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+/* Дополнительные услуги */
+.additional-services {
+    margin: 80px 0;
+}
+
+.additional-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.additional-card {
+    background: var(--white);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s;
+    display: flex;
+    gap: 20px;
+    border: 1px solid var(--gray);
+}
+
+.additional-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--red);
+}
+
+.additional-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 0, 0, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--red);
+    font-size: 2rem;
+    transition: all 0.3s;
+    flex-shrink: 0;
+}
+
+.additional-card:hover .additional-icon {
+    background: var(--red);
+    color: var(--white);
+}
+
+.additional-content {
+    flex: 1;
+}
+
+.additional-content h3 {
+    color: var(--black);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.additional-content p {
+    color: var(--gray-dark);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* CTA секция */
+.cooperation-cta {
+    background: linear-gradient(135deg, var(--black), var(--black-light));
+    color: var(--white);
+    padding: 80px 0;
+    text-align: center;
+    border-radius: 20px;
+    margin: 80px 0;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--red);
+}
+
+.cooperation-cta .cta-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.cooperation-cta .cta-content p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.btn-primary {
+    background: var(--red);
+    color: var(--white);
+    padding: 16px 40px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: inline-block;
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.3);
+}
+
+.btn-primary:hover {
+    background: var(--red-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.4);
+}
+
+.cta-contact-info {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cta-contact-info p {
+    margin-bottom: 20px;
+    opacity: 0.7;
+    font-size: 1rem;
+}
+
+.contact-actions {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--white);
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: default;
+}
+
+.contact-action:hover {
+    background: var(--red);
+    transform: translateY(-3px);
+    border-color: var(--red);
+}
+
+/* Адаптивность для планшетов */
+@media (max-width: 992px) {
+    .services-main-title {
+        font-size: 2.2rem;
+    }
+    
+    .section-heading {
+        font-size: 2rem;
+    }
+    
+    .premium-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .additional-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .cooperation-cta .cta-content h2 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .services-categories {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .services-main-title {
+        font-size: 1.8rem;
+    }
+    
+    .services-description {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+    
+    .section-heading {
+        font-size: 1.8rem;
+    }
+    
+    .premium-services-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .additional-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .additional-card {
+        padding: 25px;
+    }
+    
+    .cooperation-cta {
+        padding: 60px 20px;
+    }
+    
+    .cooperation-cta .cta-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .btn-primary {
+        width: 100%;
+    }
+    
+    .contact-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .contact-action {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Адаптивность для маленьких телефонов */
+@media (max-width: 480px) {
+    .services-categories {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .services-main-title {
+        font-size: 1.5rem;
+    }
+    
+    .section-heading {
+        font-size: 1.5rem;
+    }
+    
+    .premium-card-header h3 {
+        font-size: 1.3rem;
+    }
+    
+    .premium-feature-list.two-column {
+        grid-template-columns: 1fr;
+    }
+    
+    .additional-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .additional-icon {
+        margin: 0 auto;
+    }
+}

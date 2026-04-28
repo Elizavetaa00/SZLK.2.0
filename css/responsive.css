@@ -1,0 +1,265 @@
+/* Адаптивные стили */
+
+/* Планшеты и небольшие ноутбуки */
+@media (max-width: 992px) {
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .service-detail {
+        padding: 30px;
+    }
+}
+
+/* Планшеты в портретном режиме и большие телефоны */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        padding: 10px 0;
+    }
+    
+    .logo-text h1 {
+        font-size: 1.3rem;
+    }
+    
+    .logo-text span {
+        font-size: 0.8rem;
+    }
+    
+    nav ul {
+        display: none;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+    
+    .services-grid, .clients-grid, .advantages-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    section {
+        padding: 40px 0;
+    }
+    
+    .advantages-section {
+        padding: 30px 20px;
+    }
+    
+    .registration-form {
+        padding: 25px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .suppliers-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .breadcrumbs ol {
+        font-size: 0.9rem;
+    }
+    
+    .timeline::after {
+        left: 31px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-year,
+    .timeline-item:nth-child(even) .timeline-year {
+        left: 10px;
+        right: auto;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-content::after,
+    .timeline-item:nth-child(even) .timeline-content::after {
+        left: -10px;
+        right: auto;
+    }
+    
+    .team-grid, .values-grid, .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .mission-section {
+        padding: 40px 20px;
+    }
+}
+
+/* Мобильные телефоны */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero h2 {
+        font-size: 1.6rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.6rem;
+    }
+    
+    .service-content, .client-card, .achievement-card {
+        padding: 20px;
+    }
+    
+    .footer-column h3 {
+        font-size: 1.2rem;
+    }
+    
+    .registration-form {
+        padding: 20px;
+    }
+    
+    .form-control {
+        padding: 10px 12px;
+    }
+    
+    .scroll-to-top {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+/* Дополнительные адаптивные стили для страницы услуг */
+
+@media (max-width: 992px) {
+    .services-categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .premium-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .additional-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .services-main-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-heading {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .services-categories {
+        grid-template-columns: 1fr;
+    }
+    
+    .premium-services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .additional-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .premium-card-header h3 {
+        font-size: 1.3rem;
+    }
+}
+/* Дополнительные исправления для мобильного меню */
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        z-index: 999;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        border-top: 1px solid var(--gray);
+        border-bottom: 3px solid var(--red);
+        max-height: calc(100vh - 80px);
+        overflow-y: auto;
+    }
+    
+    .mobile-menu.active {
+        display: block !important;
+    }
+    
+    .mobile-menu a {
+        display: block;
+        padding: 15px 20px;
+        border-bottom: 1px solid var(--gray);
+        font-size: 1rem;
+        text-decoration: none;
+        color: var(--black);
+        transition: all 0.3s;
+    }
+    
+    .mobile-menu a:hover,
+    .mobile-menu a.active {
+        background: rgba(255, 0, 0, 0.05);
+        color: var(--red);
+        padding-left: 25px;
+        border-left: 3px solid var(--red);
+    }
+    
+    .mobile-menu a:last-child {
+        border-bottom: none;
+    }
+    
+    /* Убедимся, что кнопка видна и имеет правильный z-index */
+    .mobile-menu-btn {
+        display: block;
+        position: relative;
+        z-index: 1000;
+    }
+}

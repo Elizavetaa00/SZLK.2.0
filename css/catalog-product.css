@@ -1,0 +1,307 @@
+/* catalog-product.css - общий стиль для страниц товаров */
+
+:root {
+    --black: #000000;
+    --black-light: #333333;
+    --red: #ff0000;
+    --red-dark: #cc0000;
+    --white: #ffffff;
+    --gray-light: #f5f5f5;
+    --gray: #e0e0e0;
+    --gray-dark: #666666;
+    --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 8px 30px rgba(255, 0, 0, 0.08);
+    --shadow-lg: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Общий контейнер */
+.product-detail-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+    padding: 25px 0;
+    background-color: var(--gray-light);
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--gray);
+}
+
+.breadcrumbs ol {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* ===== ШАПКА ТОВАРА ===== */
+
+/* 🔥 УБРАЛИ 2 колонки — теперь вертикально */
+.product-detail-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ===== КАРТИНКА ===== */
+
+.product-detail-image {
+    width: 100%;
+    max-width: 700px; /* 🔥 ограничиваем размер на ПК */
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 2px solid var(--red);
+}
+
+.product-detail-image img {
+    width: 100%;
+    height: auto; /* 🔥 убираем растягивание */
+    display: block;
+}
+
+/* ===== ТЕКСТ ===== */
+
+.product-detail-info h1 {
+    font-size: 2rem;
+    color: var(--black);
+    margin-bottom: 15px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.product-detail-category {
+    color: var(--red);
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.product-detail-description {
+    color: var(--gray-dark);
+    line-height: 1.8;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+/* ===== ПЛУНЖЕРЫ ===== */
+
+.product-plungers {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--gray);
+}
+
+.product-plungers h2 {
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.plunger-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.plunger-link {
+    padding: 12px 25px;
+    background: var(--gray-light);
+    color: var(--black);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s;
+    border: 1px solid var(--gray);
+    font-size: 0.95rem;
+}
+
+.plunger-link:hover {
+    background: var(--red);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
+/* ===== СЕКЦИИ ===== */
+
+.plunger-section {
+    margin: 50px 0;
+    padding: 25px;
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--gray);
+}
+
+.plunger-section h3 {
+    color: var(--red);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border-left: 5px solid var(--red);
+    padding-left: 15px;
+    font-weight: 700;
+}
+
+/* ===== ТАБЛИЦЫ ===== */
+
+.table-container {
+    overflow-x: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.details-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+/* ❌ УБРАЛИ min-width — теперь адаптив нормальный */
+
+.details-table th {
+    background: var(--black);
+    color: var(--white);
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.details-table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid var(--gray);
+    color: var(--gray-dark);
+}
+
+.details-table tr:nth-child(even) {
+    background: #fafafa;
+}
+
+.details-table tr:hover td {
+    background: rgba(255, 0, 0, 0.03);
+}
+
+/* ===== ПРИМЕЧАНИЕ ===== */
+
+.table-note {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 0, 0, 0.05);
+    border-left: 4px solid var(--red);
+    font-size: 0.9rem;
+    color: var(--gray-dark);
+    border-radius: 8px;
+}
+
+/* ===== КНОПКА ===== */
+
+.back-to-top {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--red);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.back-to-top:hover {
+    color: var(--red-dark);
+    transform: translateY(-3px);
+}
+
+/* ===== АДАПТИВ ===== */
+
+@media (max-width: 992px) {
+    .product-detail-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .product-detail-image img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-detail-page {
+        padding: 15px;
+    }
+
+    .product-detail-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .product-detail-description {
+        font-size: 1rem;
+    }
+
+    .product-detail-image img {
+        height: 250px;
+    }
+
+    .plunger-section {
+        padding: 15px;
+    }
+
+    .details-table {
+        font-size: 0.8rem;
+    }
+
+    .details-table th,
+    .details-table td {
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-detail-page {
+        padding: 10px;
+    }
+
+    .product-detail-info h1 {
+        font-size: 1.3rem;
+    }
+
+    .product-detail-description {
+        font-size: 0.9rem;
+    }
+
+    .product-detail-image img {
+        height: auto;
+    }
+
+    .plunger-links {
+        gap: 10px;
+    }
+
+    .plunger-link {
+        padding: 8px 14px;
+        font-size: 0.8rem;
+    }
+
+    .details-table {
+        font-size: 0.75rem;
+    }
+
+    .details-table th,
+    .details-table td {
+        padding: 6px;
+    }
+}
+
+@media (max-width: 400px) {
+    .product-detail-info h1 {
+        font-size: 1.1rem;
+    }
+
+    .details-table {
+        font-size: 0.7rem;
+    }
+}

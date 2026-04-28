@@ -1,0 +1,342 @@
+/* contacts.css - стили для страницы контактов */
+:root {
+    --black: #000000;
+    --black-light: #333333;
+    --red: #ff0000;
+    --red-dark: #cc0000;
+    --white: #ffffff;
+    --gray-light: #f5f5f5;
+    --gray: #e0e0e0;
+    --gray-dark: #666666;
+    --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 8px 30px rgba(255, 0, 0, 0.08);
+    --shadow-lg: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок страницы */
+.contacts-header {
+    padding: 30px 0 20px;
+    text-align: center;
+}
+
+.contacts-badge {
+    display: inline-block;
+    padding: 8px 20px;
+    background: var(--red);
+    color: var(--white);
+    border-radius: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.contacts-main-title {
+    font-size: 2.8rem;
+    color: var(--black);
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.title-highlight {
+    color: var(--red);
+}
+
+.contacts-description {
+    color: var(--gray-dark);
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Контактные карточки */
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 50px 0;
+}
+
+.contact-card {
+    background: var(--white);
+    padding: 35px 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--gray);
+    transition: all 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--red);
+    box-shadow: var(--shadow-md);
+}
+
+.contact-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: var(--red);
+    font-size: 2rem;
+    transition: all 0.3s;
+}
+
+.contact-card:hover .contact-icon {
+    background: var(--red);
+    color: var(--white);
+}
+
+.contact-card h3 {
+    color: var(--black);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.contact-card p {
+    color: var(--black);
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.contact-note {
+    color: var(--gray-dark) !important;
+    font-size: 0.95rem !important;
+}
+
+/* Реквизиты компании */
+.company-requisites {
+    margin: 60px 0;
+    background: var(--white);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--gray);
+}
+
+.company-requisites h2 {
+    text-align: center;
+    color: var(--black);
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.requisites-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 40px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.requisite-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background: var(--gray-light);
+    border-radius: 10px;
+}
+
+.requisite-label {
+    color: var(--gray-dark);
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.requisite-value {
+    color: var(--black);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Карта Яндекса */
+.map-section {
+    margin: 60px 0;
+}
+
+.map-section h2 {
+    text-align: center;
+    color: var(--black);
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.map-container {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 2px solid var(--red);
+}
+
+.map-container > div {
+    border-radius: 15px;
+}
+
+.map-container iframe {
+    display: block;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.map-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    border-left: 4px solid var(--red);
+    z-index: 20;
+}
+
+.map-overlay i {
+    color: var(--red);
+    margin-right: 8px;
+}
+
+.map-note {
+    text-align: center;
+    color: var(--gray-dark);
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+/* Социальные сети */
+.social-section {
+    margin: 60px 0;
+}
+
+.social-section h2 {
+    text-align: center;
+    color: var(--black);
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.social-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    color: var(--white);
+}
+
+.social-card i {
+    font-size: 1.5rem;
+}
+
+.social-card.vk {
+    background: #4c75a3;
+}
+
+.social-card.telegram {
+    background: #0088cc;
+}
+
+.social-card.whatsapp {
+    background: #25d366;
+}
+
+.social-card:hover {
+    transform: translateY(-5px);
+    filter: brightness(1.1);
+    box-shadow: var(--shadow-md);
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .contacts-main-title {
+        font-size: 2.2rem;
+    }
+    
+    .contact-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .social-grid {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts-main-title {
+        font-size: 1.8rem;
+    }
+    
+    .contact-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .requisites-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .map-container iframe {
+        height: 300px;
+    }
+    
+    .map-overlay {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        text-align: center;
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+    
+    .map-overlay i {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contacts-main-title {
+        font-size: 1.5rem;
+    }
+    
+    .company-requisites {
+        padding: 25px;
+    }
+    
+    .requisite-value {
+        font-size: 1rem;
+    }
+    
+    .map-container iframe {
+        height: 250px;
+    }
+    
+    .map-overlay {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+    }
+    
+    .map-overlay i {
+        font-size: 0.85rem;
+    }
+}
