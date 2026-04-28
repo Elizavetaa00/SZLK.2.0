@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Катушки, катушки переходные, адаптеры - СЗЛК ПРОИЗВОДСТВО</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/catalog-product.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
+    <style>
+        .schema-block {
+            margin: 30px 0;
+            text-align: center;
+        }
+        .schema-block img {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            border: 1px solid var(--gray);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .schema-block img:hover {
+            transform: scale(1.02);
+            border-color: var(--red);
+        }
+        .params-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            font-size: 0.75rem;
+        }
+        .params-table th {
+            background: var(--black);
+            color: var(--white);
+            padding: 10px 5px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.7rem;
+        }
+        .params-table td {
+            padding: 8px 5px;
+            text-align: center;
+            border-bottom: 1px solid var(--gray);
+            color: var(--gray-dark);
+            font-size: 0.7rem;
+        }
+        .params-table tr:hover td {
+            background: rgba(255, 0, 0, 0.03);
+        }
+        .type-title {
+            background: var(--red);
+            color: var(--white);
+            padding: 8px 15px;
+            margin: 15px 0 10px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: inline-block;
+            border-radius: 5px;
+        }
+        .info-block {
+            background: var(--gray-light);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+            border-left: 4px solid var(--red);
+        }
+        .info-block p {
+            color: var(--gray-dark);
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            .params-table {
+                font-size: 0.6rem;
+                min-width: 900px;
+            }
+            .params-table th,
+            .params-table td {
+                padding: 5px 3px;
+            }
+            .schema-block img {
+                max-width: 280px;
+            }
+        }
+        @media (max-width: 576px) {
+            .schema-block img {
+                max-width: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="../assets/image/logo.png" alt="СЗЛК ПРОИЗВОДСТВО" class="logo-img">
+                <div class="logo-text">
+                    <h1>СЗЛК Производство</h1>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="mainMenu">
+                    <li><a href="../index.html" class="nav-link">Главная</a></li>
+                    <li><a href="../catalog.html" class="nav-link active">Каталог</a></li>
+                    <li><a href="../services.html" class="nav-link">Услуги</a></li>
+                    <li><a href="../about.html" class="nav-link">О компании</a></li>
+                    <li><a href="../clients.html" class="nav-link">Клиенты</a></li>
+                    <li><a href="../contacts.html" class="nav-link">Контакты</a></li>
+                    <li><a href="../registration.html" class="nav-link">Заявка</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="../index.html" class="nav-link">Главная</a>
+            <a href="../catalog.html" class="nav-link active">Каталог</a>
+            <a href="../services.html" class="nav-link">Услуги</a>
+            <a href="../about.html" class="nav-link">О компании</a>
+            <a href="../clients.html" class="nav-link">Клиенты</a>
+            <a href="../contacts.html" class="nav-link">Контакты</a>
+            <a href="../registration.html" class="nav-link">Заявка</a>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ol>
+                <li><a href="../index.html">Главная</a></li>
+                <li class="separator">/</li>
+                <li><a href="../catalog.html">Каталог</a></li>
+                <li class="separator">/</li>
+                <li><a href="../catalog-category-armatura.html">Соединительная и запорная арматура</a></li>
+                <li class="separator">/</li>
+                <li class="current">Катушки, катушки переходные, адаптеры</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Главный контент -->
+    <main>
+        <div class="container">
+            <!-- Информация о товаре -->
+            <div class="product-detail-header">
+                <div class="product-detail-image">
+                    <img src="../assets/image/catalog-category/1.8.png" alt="Катушки и адаптеры">
+                </div>
+                <div class="product-detail-info">
+                    <h1>Катушки, катушки переходные, адаптеры</h1>
+                    <p class="product-detail-category">Категория: Соединительная и запорная арматура</p>
+                    <p class="product-detail-description">Катушки, катушки переходные и адаптеры для изменения длины или направления трубопровода. Изготавливаются по индивидуальным размерам заказчика. Присоединительные размеры согласовываются в индивидуальном порядке и выполняются по ГОСТ 28919-91.</p>
+                </div>
+            </div>
+
+            <!-- Навигация по типам -->
+            <div class="product-plungers">
+                <h2>Типы изделий</h2>
+                <div class="plunger-links">
+                    <a href="#adaptery" class="plunger-link">Адаптеры</a>
+                    <a href="#katushki" class="plunger-link">Катушки</a>
+                    <a href="#katushki-perekhodnye" class="plunger-link">Катушки переходные</a>
+                </div>
+            </div>
+
+            <!-- Адаптеры -->
+            <div class="plunger-section" id="adaptery">
+                <h3>Адаптеры</h3>
+                <div class="table-container">
+                <table class="params-table">
+                    <thead>
+                        <tr>
+                            <th>Параметры</th>
+                            <th>Адаптер<br>УТИ.80х105-80х70</th>
+                            <th>Адаптер<br>УТИ.100х70-80х70</th>
+                            <th>Адаптер<br>УТИ.100х105-100х70</th>
+                            <th>Адаптер<br>УТИ.180х21-180х14</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Наружный диаметр D (мм)</td><td>288</td><td>315</td><td>360</td><td>380</td></tr>
+                        <tr><td>Диаметр делительной окружности центров отверстий под шпильки D1 (мм)</td><td>230</td><td>258,5</td><td>290,5</td><td>317,5</td></tr>
+                        <tr><td>Диаметр делительной окружности центров отверстий под шпильки D2 (мм)</td><td>216</td><td>216</td><td>258,5</td><td>292</td></tr>
+                        <tr><td>Диаметр проходного отверстия d (мм)</td><td>78</td><td>103</td><td>103</td><td>180</td></tr>
+                        <tr><td>Диаметр проходного отверстия d1 (мм)</td><td>78</td><td>78</td><td>103</td><td>180</td></tr>
+                        <tr><td>Обозначение резьбы под шпильки М</td><td>M27</td><td>M27</td><td>M36x3</td><td>M27</td></tr>
+                        <tr><td>Обозначение резьбы под шпильки М1</td><td>M24</td><td>M24</td><td>M27</td><td>M24</td></tr>
+                        <tr><td>Количество отверстий под шпильки n (шт)</td><td>8</td><td>8</td><td>8</td><td>12</td></tr>
+                        <tr><td>Количество отверстий под шпильки n1 (шт)</td><td>8</td><td>8</td><td>8</td><td>12</td></tr>
+                        <tr><td>Длина резьбы под шпильки l1 (мм)</td><td>35</td><td>35</td><td>45</td><td>35</td></tr>
+                        <tr><td>Длина резьбы под шпильки l2 (мм)</td><td>30</td><td>30</td><td>35</td><td>30</td></tr>
+                        <tr><td>Тип прокладки (Вид А)</td><td>БХ154</td><td>БХ155</td><td>БХ155</td><td>П45</td></tr>
+                        <tr><td>Ширина канавки b (мм)</td><td>15,4</td><td>17,7</td><td>17,7</td><td>12</td></tr>
+                        <tr><td>Глубина канавки f (мм)</td><td>7,5</td><td>8,3</td><td>8,3</td><td>8</td></tr>
+                        <tr><td>Тип прокладки (Вид Б)</td><td>БХ154</td><td>БХ154</td><td>БХ155</td><td>П45</td></tr>
+                        <tr><td>Ширина канавки b1 (мм)</td><td>15,4</td><td>15,4</td><td>17,7</td><td>12</td></tr>
+                        <tr><td>Глубина канавки f1 (мм)</td><td>7,5</td><td>7,5</td><td>8,3</td><td>8</td></tr>
+                        <tr><td>Общая длина адаптера Н (мм)</td><td>110</td><td>120</td><td>120</td><td>110</td></tr>
+                    </tbody>
+                </table>
+            </div>
+                <div class="schema-block">
+                    <img src="../assets/image/directory-schemes/2.11.png" alt="Схема адаптера" onclick="openImage(this.src)">
+                    <p class="table-note">Примечание: Нажмите на изображение для увеличения.</p>
+                </div>
+            </div>
+
+            <!-- Катушки -->
+            <div class="plunger-section" id="katushki">
+                <h3>Катушки</h3>
+                <div class="info-block">
+                    <p>Варианты исполнения могут быть различными в зависимости от номинального рабочего давления.</p>
+                    <p>Присоединительные размеры катушки согласовываются в индивидуальном порядке и выполняются по ГОСТ 28919-91.</p>
+                </div>
+                <div class="schema-block">
+                    <img src="../assets/image/directory-schemes/2.12.png" alt="Схема катушки" onclick="openImage(this.src)">
+                    <p class="table-note">Примечание: Нажмите на изображение для увеличения.</p>
+                </div>
+            </div>
+
+            <!-- Катушки переходные -->
+            <div class="plunger-section" id="katushki-perekhodnye">
+                <h3>Катушки переходные</h3>
+                <div class="table-container">
+                <table class="params-table">
+                    <thead>
+                        <tr>
+                            <th>Параметры</th>
+                            <th>Катушка<br>УТИ.80х70-65х21</th>
+                            <th>Катушка<br>УТИ.80х70-50х21</th>
+                            <th>Катушка<br>УТИ.80х105-80х70</th>
+                            <th>Катушка<br>УТИ.80х70-65х70</th>
+                            <th>Катушка<br>УТИ.80х70-100х35</th>
+                            <th>Катушка<br>УТИ.80х70-80х70</th>
+                            <th>Катушка<br>УТИ.100х70-80х21</th>
+                            <th>Катушка<br>УТИ.80х70-65х14</th>
+                            <th>Катушка<br>УТИ.80х70-100х70</th>
+                            <th>Катушка<br>УТИ.100х105-80х70</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Наружный диаметр D (мм)</td><td>270</td><td>270</td><td>288</td><td>270</td><td>270</td><td>315</td><td>270</td><td>270</td><td>360</td><td>360</td></tr>
+                        <tr><td>Наружный диаметр D1 (мм)</td><td>245</td><td>215</td><td>270</td><td>230</td><td>310</td><td>270</td><td>242</td><td>190</td><td>315</td><td>270</td></tr>
+                        <tr><td>Диаметр делительной окружности центров отверстий под шпильки D2 (мм)</td><td>216</td><td>216</td><td>230</td><td>216</td><td>216</td><td>258,5</td><td>216</td><td>216</td><td>290,5</td><td>290,5</td></tr>
+                        <tr><td>Диаметр делительной окружности центров отверстий под шпильки D3 (мм)</td><td>190,5</td><td>165</td><td>216</td><td>184</td><td>241</td><td>216</td><td>190,5</td><td>149</td><td>258,5</td><td>216</td></tr>
+                        <tr><td>Большой диаметр шейки D4 (мм)</td><td>142</td><td>142</td><td>154</td><td>142</td><td>142</td><td>183</td><td>142</td><td>142</td><td>195</td><td>195</td></tr>
+                        <tr><td>Большой диаметр шейки D5 (мм)</td><td>124</td><td>105</td><td>142</td><td>121</td><td>162</td><td>142</td><td>127</td><td>100</td><td>183</td><td>142</td></tr>
+                        <tr><td>Диаметр проходного отверстия d (мм)</td><td>78</td><td>78</td><td>78</td><td>78</td><td>78</td><td>103</td><td>78</td><td>78</td><td>103</td><td>103</td></tr>
+                        <tr><td>Диаметр проходного отверстия d1 (мм)</td><td>65</td><td>52</td><td>78</td><td>65</td><td>103</td><td>78</td><td>78</td><td>65</td><td>103</td><td>78</td></tr>
+                        <tr><td>Диаметр отверстий под шпильки d2 (мм)</td><td>28</td><td>28</td><td>32</td><td>28</td><td>28</td><td>32</td><td>28</td><td>28</td><td>39</td><td>39</td></tr>
+                        <tr><td>Диаметр отверстий под шпильки d3 (мм)</td><td>28</td><td>25</td><td>28</td><td>25</td><td>36</td><td>28</td><td>25</td><td>23</td><td>32</td><td>28</td></tr>
+                        <tr><td>Количество отверстий под шпильки n (шт)</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td></tr>
+                        <tr><td>Количество отверстий под шпильки n1 (шт)</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td></tr>
+                        <tr><td>Полная высота тарелки h (мм)</td><td>58</td><td>58</td><td>65</td><td>58</td><td>58</td><td>70</td><td>58</td><td>58</td><td>80</td><td>80</td></tr>
+                        <tr><td>Полная высота тарелки h1 (мм)</td><td>50</td><td>46</td><td>58</td><td>51</td><td>62</td><td>58</td><td>46</td><td>37</td><td>70</td><td>58</td></tr>
+                        <tr><td>Тип прокладки (Вид А)</td><td>П27</td><td>П24</td><td>БХ154</td><td>БХ153</td><td>П39</td><td>БХ154</td><td>П31</td><td>П26</td><td>БХ155</td><td>БХ154</td></tr>
+                        <tr><td>Ширина канавки b1 (мм)</td><td>12</td><td>12</td><td>15,4</td><td>14,1</td><td>12</td><td>15,4</td><td>12</td><td>12</td><td>17,7</td><td>15,4</td></tr>
+                        <tr><td>Глубина канавки f1 (мм)</td><td>8</td><td>8</td><td>7,5</td><td>6,8</td><td>8</td><td>7,5</td><td>8</td><td>8</td><td>8,3</td><td>7,5</td></tr>
+                        <tr><td>Тип прокладки (Вид Б)</td><td>БХ154</td><td>БХ154</td><td>БХ154</td><td>БХ154</td><td>БХ154</td><td>БХ155</td><td>БХ154</td><td>БХ154</td><td>БХ155</td><td>БХ155</td></tr>
+                        <tr><td>Ширина канавки b (мм)</td><td>15,4</td><td>15,4</td><td>15,4</td><td>15,4</td><td>15,4</td><td>17,7</td><td>15,4</td><td>15,4</td><td>17,7</td><td>17,7</td></tr>
+                        <tr><td>Глубина канавки f (мм)</td><td>7,5</td><td>7,5</td><td>7,5</td><td>7,5</td><td>7,5</td><td>8,3</td><td>7,5</td><td>7,5</td><td>8,3</td><td>8,3</td></tr>
+                        <tr><td>Общая длина катушки Н (мм)</td><td>250</td><td>250</td><td>250</td><td>250</td><td>250</td><td>250</td><td>250</td><td>250</td><td>350</td><td>350</td></tr>
+                    </tbody>
+                </table>
+            </div>
+                <div class="schema-block">
+                    <img src="../assets/image/directory-schemes/2.13.png" alt="Схема катушки переходной" onclick="openImage(this.src)">
+                    <p class="table-note">Примечание: Нажмите на изображение для увеличения.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ООО "СЗЛК Производство"</h3>
+                    <p>Профессиональная механическая обработка металлических изделий и поставка запасных частей для нефтегазового оборудования с 2016 года.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Нефтеюганск, ул. Мира, стр. 8/1</p>
+                    <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@szlk-production.ru</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Быстрые ссылки</h3>
+                    <a href="../index.html">Главная</a>
+                    <a href="../catalog.html">Каталог</a>
+                    <a href="../services.html">Услуги</a>
+                    <a href="../about.html">О компании</a>
+                    <a href="../clients.html">Клиенты</a>
+                    <a href="../contacts.html">Контакты</a>
+                    <a href="../registration.html">Заявка</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2016–2025 ООО "СЗЛК Производство". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        function openImage(src) {
+            const modal = document.createElement('div');
+            modal.style.position = 'fixed';
+            modal.style.top = '0';
+            modal.style.left = '0';
+            modal.style.width = '100%';
+            modal.style.height = '100%';
+            modal.style.backgroundColor = 'rgba(0,0,0,0.9)';
+            modal.style.zIndex = '9999';
+            modal.style.display = 'flex';
+            modal.style.alignItems = 'center';
+            modal.style.justifyContent = 'center';
+            modal.style.cursor = 'pointer';
+            
+            const img = document.createElement('img');
+            img.src = src;
+            img.style.maxWidth = '90%';
+            img.style.maxHeight = '90%';
+            img.style.borderRadius = '10px';
+            img.style.border = '2px solid #ff0000';
+            
+            modal.appendChild(img);
+            document.body.appendChild(modal);
+            
+            modal.onclick = function() { modal.remove(); };
+        }
+    </script>
+</body>
+</html>

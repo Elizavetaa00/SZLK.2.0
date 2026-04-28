@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Переходники - СЗЛК ПРОИЗВОДСТВО</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/catalog-product.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
+    <style>
+        .schema-block {
+            margin: 30px 0;
+            text-align: center;
+        }
+        .schema-block img {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            border: 1px solid var(--gray);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .schema-block img:hover {
+            transform: scale(1.02);
+            border-color: var(--red);
+        }
+        .params-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            font-size: 0.8rem;
+        }
+        .params-table th {
+            background: var(--black);
+            color: var(--white);
+            padding: 10px 5px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.75rem;
+        }
+        .params-table td {
+            padding: 8px 5px;
+            text-align: center;
+            border-bottom: 1px solid var(--gray);
+            color: var(--gray-dark);
+            font-size: 0.75rem;
+        }
+        .params-table tr:hover td {
+            background: rgba(255, 0, 0, 0.03);
+        }
+        .type-title {
+            background: var(--red);
+            color: var(--white);
+            padding: 8px 15px;
+            margin: 15px 0 10px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: inline-block;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .params-table {
+                font-size: 0.65rem;
+                min-width: 900px;
+            }
+            .params-table th,
+            .params-table td {
+                padding: 5px 3px;
+            }
+            .schema-block img {
+                max-width: 280px;
+            }
+        }
+        @media (max-width: 576px) {
+            .schema-block img {
+                max-width: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="../assets/image/logo.png" alt="СЗЛК ПРОИЗВОДСТВО" class="logo-img">
+                <div class="logo-text">
+                    <h1>СЗЛК Производство</h1>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="mainMenu">
+                    <li><a href="../index.html" class="nav-link">Главная</a></li>
+                    <li><a href="../catalog.html" class="nav-link active">Каталог</a></li>
+                    <li><a href="../services.html" class="nav-link">Услуги</a></li>
+                    <li><a href="../about.html" class="nav-link">О компании</a></li>
+                    <li><a href="../clients.html" class="nav-link">Клиенты</a></li>
+                    <li><a href="../contacts.html" class="nav-link">Контакты</a></li>
+                    <li><a href="../registration.html" class="nav-link">Заявка</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="../index.html" class="nav-link">Главная</a>
+            <a href="../catalog.html" class="nav-link active">Каталог</a>
+            <a href="../services.html" class="nav-link">Услуги</a>
+            <a href="../about.html" class="nav-link">О компании</a>
+            <a href="../clients.html" class="nav-link">Клиенты</a>
+            <a href="../contacts.html" class="nav-link">Контакты</a>
+            <a href="../registration.html" class="nav-link">Заявка</a>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ol>
+                <li><a href="../index.html">Главная</a></li>
+                <li class="separator">/</li>
+                <li><a href="../catalog.html">Каталог</a></li>
+                <li class="separator">/</li>
+                <li><a href="../catalog-category-armatura.html">Соединительная и запорная арматура</a></li>
+                <li class="separator">/</li>
+
+                <li class="current">Переходники</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Главный контент -->
+    <main>
+        <div class="container">
+            <!-- Информация о товаре -->
+            <div class="product-detail-header">
+                <div class="product-detail-image">
+                    <img src="../assets/image/catalog-category/1.7.png" alt="Переходники">
+                </div>
+                <div class="product-detail-info">
+                    <h1>Переходники</h1>
+                    <p class="product-detail-category">Категория: Соединительная и запорная арматура</p>
+                    <p class="product-detail-description">Переходники предназначены для соединения трубопроводов и оборудования различных типоразмеров. Изготавливаются из высокопрочных материалов по индивидуальным размерам заказчика. Представлены переходники типов Р-Г, Г-Г и Р-Р.</p>
+                </div>
+            </div>
+
+            <!-- Навигация по типам переходников -->
+            <div class="product-plungers">
+                <h2>Типы переходников</h2>
+                <div class="plunger-links">
+                    <a href="#perekhodniki-rg" class="plunger-link">Переходники типа Р-Г</a>
+                    <a href="#perekhodniki-gg" class="plunger-link">Переходники типа Г-Г</a>
+                    <a href="#perekhodniki-rr" class="plunger-link">Переходники типа Р-Р</a>
+                </div>
+            </div>
+
+            <!-- Переходники типа Р-Г -->
+            <div class="plunger-section" id="perekhodniki-rg">
+                <h3>Переходники типа Р-Г</h3>
+                <div class="table-container">
+                <table class="params-table">
+                    <thead>
+                        <tr>
+                            <th>Параметры</th>
+                            <th>Переходник<br>ГРП 00.036</th>
+                            <th>Переходник<br>ГРП 00.046</th>
+                            <th>Переходник<br>ГРП 00.047</th>
+                            <th>Переходник<br>ГРП 00.048</th>
+                            <th>Переходник<br>ГРП 00.049</th>
+                            <th>Переходник<br>ГРП 00.050</th>
+                            <th>Переходник<br>ГРП 00.051</th>
+                            <th>Переходник<br>ГРП 00.052</th>
+                            <th>Переходник<br>ГРП 00.053</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Наружный диаметр D (мм)</td><td>80</td><td>80</td><td>112</td><td>112</td><td>112</td><td>80</td><td>80</td><td>80</td><td>80</td></tr>
+                        <tr><td>Наружный диаметр D1 (мм)</td><td>104</td><td>104</td><td>104</td><td>72</td><td>72</td><td>72</td><td>72</td><td>72</td><td>74</td></tr>
+                        <tr><td>Диаметр проходного отверстия d (мм)</td><td>44</td><td>44</td><td>77</td><td>44</td><td>44</td><td>44</td><td>44</td><td>44</td><td>42</td></tr>
+                        <tr><td>Диаметр переходной фаски d1 (мм)</td><td>70</td><td>70</td><td>77</td><td>44</td><td>44</td><td>44</td><td>44</td><td>44</td><td>42</td></tr>
+                        <tr><td>Тип гайки</td><td>Гайка 3" WECO 1502<br>5,375-3,5 ACME-3G</td><td>Гайка 3" WECO 1502<br>5,375-3,5 ACME-3G</td><td>Гайка 3" WECO 1502<br>5,375-3,5 ACME-3G</td><td>Гайка 2" WECO 1502<br>4,125-3 ACME-3G</td><td>Гайка 2" WECO 1502<br>4,125-3 ACME-3G</td><td>Гайка 2" WECO 1502<br>4,125-3 ACME-3G</td><td>Гайка 2" WECO 1502<br>4,125-3 ACME-3G</td><td>Гайка 2" WECO 1502<br>4,125-3 ACME-3G</td><td>Гайка 2" WECO 1502<br>4,125-3 ACME-3G</td></tr>
+                        <tr><td>Ширина гайки h (мм)</td><td>70</td><td>70</td><td>70</td><td>63,5</td><td>63,5</td><td>63,5</td><td>63,5</td><td>63,5</td><td>63,5</td></tr>
+                        <tr><td>Высота гайки H (мм)</td><td>200</td><td>200</td><td>200</td><td>163,25</td><td>163,25</td><td>163,25</td><td>163,25</td><td>163,25</td><td>163,25</td></tr>
+                        <tr><td>Тип кольца стопорного</td><td>Кольцо стопорное 3"</td><td>Кольцо стопорное 3"</td><td>Кольцо стопорное 3"</td><td>Кольцо стопорное 2"</td><td>Кольцо стопорное 2"</td><td>Кольцо стопорное 2"</td><td>Кольцо стопорное 2"</td><td>Кольцо стопорное 2"</td><td>Кольцо стопорное 2"</td></tr>
+                        <tr><td>Тип сухарей</td><td>Сухари на 3"</td><td>Сухари на 3"</td><td>Сухари на 3"</td><td>Сухари на 2"</td><td>Сухари на 2"</td><td>Сухари на 2"</td><td>Сухари на 2"</td><td>Сухари на 2"</td><td>Сухари на 2"</td></tr>
+                        <tr><td>Внешний диаметр ниппеля D2 (мм)</td><td>116,2</td><td>116,2</td><td>116,2</td><td>82,5</td><td>82,5</td><td>82,5</td><td>82,5</td><td>82,5</td><td>82,5</td></tr>
+                        <tr><td>Тип резьбы</td><td>4,125-3 ACME-3G</td><td>Сп. Tr100х12,7</td><td>5,375-3,5 ACME-3G</td><td>5,375-3,5 ACME-3G</td><td>5,375-3,5 ACME-3G</td><td>4,125-3 ACME-3G</td><td>Сп. Tr100х12,7</td><td>Сп. Tr100х12,7</td><td>4,125-3 ACME-3G</td></tr>
+                        <tr><td>Тип уплотнения</td><td>Уплотнение торцевое 2"</td><td>Уплотнение торцевое 2"</td><td>Уплотнение торцевое 3"</td><td>Уплотнение торцевое 3"</td><td>Уплотнение торцевое 3"</td><td>Уплотнение торцевое 2"</td><td>Уплотнение торцевое 2"</td><td>Уплотнение торцевое 2"</td><td>Уплотнение торцевое 2"</td></tr>
+                        <tr><td>Длина патрубка L (мм)</td><td>200</td><td>200</td><td>200</td><td>200</td><td>200</td><td>220</td><td>200</td><td>200</td><td>200</td></tr>
+                        <tr><td>Общая длина переходника L1 (мм)</td><td>224</td><td>224</td><td>224</td><td>221,2</td><td>221,2</td><td>221,2</td><td>221,2</td><td>221,2</td><td>221,2</td></tr>
+                    </tbody>
+                </table>
+            </div>
+                <div class="schema-block">
+                    <img src="../assets/image/directory-schemes/2.8.png" alt="Схема переходника" onclick="openImage(this.src)">
+                    <p class="table-note">Примечание: Нажмите на изображение для увеличения.</p>
+                </div>
+            </div>
+
+            <!-- Переходники типа Г-Г -->
+            <div class="plunger-section" id="perekhodniki-gg">
+                <h3>Переходники типа Г-Г</h3>
+                <div class="table-container">
+                <table class="params-table">
+                    <thead>
+                        <tr>
+                            <th>Параметры</th>
+                            <th>Переходник<br>ГРП 00.042</th>
+                            <th>Переходник<br>ГРП 00.043</th>
+                            <th>Переходник<br>ГРП 00.031</th>
+                            <th>Переходник<br>ГРП 00.044</th>
+                            <th>Переходник<br>ГРП 00.045</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Наружный диаметр D (мм)</td><td>72</td><td>72</td><td>72</td><td>72</td><td>72</td></tr>
+                        <tr><td>Диаметр проходного отверстия d (мм)</td><td>44</td><td>44</td><td>44</td><td>44</td><td>44</td></tr>
+                        <tr><td>Тип гайки 1</td><td>Гайка 2" WECO 1502<br>4,125-3 ACME-3G</td><td>Гайка 2"<br>Сп. Tr100х12,7</td><td>Гайка 2"<br>Сп. Tr100х12,7</td><td>Гайка 3" WECO 1502<br>5,375-3,5 ACME-3G</td><td>Гайка 3" WECO 1502<br>5,375-3,5 ACME-3G</td></tr>
+                        <tr><td>Тип гайки 2</td><td>Гайка 2" WECO 1502<br>4,125-3 ACME-3G</td><td>Гайка 2"<br>Сп. Tr100х12,7</td><td>Гайка 2" WECO 1502<br>4,125-3 ACME-3G</td><td>Гайка 2" WECO 1502<br>4,125-3 ACME-3G</td><td>Гайка 2"<br>Сп. Tr100х12,7</td></tr>
+                        <tr><td>Ширина гайки h1 (мм)</td><td>63,5</td><td>63,5</td><td>63,5</td><td>70</td><td>70</td></tr>
+                        <tr><td>Ширина гайки h2 (мм)</td><td>63,5</td><td>63,5</td><td>63,5</td><td>63,5</td><td>63,5</td></tr>
+                        <tr><td>Высота гайки H1 (мм)</td><td>163,25</td><td>163,25</td><td>163,25</td><td>200</td><td>200</td></tr>
+                        <tr><td>Высота гайки H2 (мм)</td><td>163,25</td><td>163,25</td><td>163,25</td><td>163,25</td><td>163,25</td></tr>
+                        <tr><td>Тип кольца стопорного 1</td><td>Кольцо стопорное 2"</td><td>Кольцо стопорное 2"</td><td>Кольцо стопорное 2"</td><td>Кольцо стопорное 3"</td><td>Кольцо стопорное 3"</td></tr>
+                        <tr><td>Тип кольца стопорного 2</td><td>Кольцо стопорное 2"</td><td>Кольцо стопорное 2"</td><td>Кольцо стопорное 2"</td><td>Кольцо стопорное 2"</td><td>Кольцо стопорное 2"</td></tr>
+                        <tr><td>Сухари тип 1</td><td>Сухари на 2"</td><td>Сухари на 2"</td><td>Сухари на 2"</td><td>Сухари на 3"</td><td>Сухари на 3"</td></tr>
+                        <tr><td>Сухари тип 2</td><td>Сухари на 2"</td><td>Сухари на 2"</td><td>Сухари на 2"</td><td>Сухари на 2"</td><td>Сухари на 2"</td></tr>
+                        <tr><td>Внешний диаметр ниппеля D1 (мм)</td><td>82,5</td><td>82,5</td><td>82,5</td><td>116,2</td><td>116,2</td></tr>
+                        <tr><td>Внешний диаметр ниппеля D2 (мм)</td><td>82,5</td><td>82,5</td><td>82,5</td><td>82,5</td><td>82,5</td></tr>
+                        <tr><td>Длина патрубка L (мм)</td><td>200</td><td>200</td><td>200</td><td>200</td><td>200</td></tr>
+                        <tr><td>Общая длина L1 (мм)</td><td>242,3</td><td>242,3</td><td>242,3</td><td>245,2</td><td>245,2</td></tr>
+                    </tbody>
+                </table>
+            </div>
+                <div class="schema-block">
+                    <img src="../assets/image/directory-schemes/2.9.png" alt="Схема переходника Г-Г" onclick="openImage(this.src)">
+                    <p class="table-note">Примечание: Нажмите на изображение для увеличения.</p>
+                </div>
+            </div>
+
+            <!-- Переходники типа Р-Р -->
+            <div class="plunger-section" id="perekhodniki-rr">
+                <h3>Переходники типа Р-Р</h3>
+                <div class="table-container">
+                <table class="params-table">
+                    <thead>
+                        <tr>
+                            <th>Параметры</th>
+                            <th>Переходник<br>ГРП 00.033</th>
+                            <th>Переходник<br>ГРП 00.037</th>
+                            <th>Переходник<br>ГРП 00.038</th>
+                            <th>Переходник<br>ГРП 00.039</th>
+                            <th>Переходник<br>ГРП 00.040</th>
+                            <th>Переходник<br>ГРП 00.041</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Наружный диаметр D (мм)</td><td>80</td><td>80</td><td>80</td><td>80</td><td>80</td><td>112</td></tr>
+                        <tr><td>Диаметр проходного отверстия d (мм)</td><td>44</td><td>44</td><td>44</td><td>44</td><td>44</td><td>77</td></tr>
+                        <tr><td>Тип резьбы 1</td><td>4,125-3 ACME-3G</td><td>4,125-3 ACME-3G</td><td>Сп. Tr100х12,7</td><td>5,375-3,5 ACME-3G</td><td>5,375-3,5 ACME-3G</td><td>5,375-3,5 ACME-3G</td></tr>
+                        <tr><td>Тип резьбы 2</td><td>Сп. Tr100х12,7</td><td>4,125-3 ACME-3G</td><td>Сп. Tr100х12,7</td><td>4,125-3 ACME-3G</td><td>Сп. Tr100х12,7</td><td>5,375-3,5 ACME-3G</td></tr>
+                        <tr><td>Тип уплотнения 1</td><td>Уплотнение торцевое 2"</td><td>Уплотнение торцевое 2"</td><td>Уплотнение торцевое 2"</td><td>Уплотнение торцевое 3"</td><td>Уплотнение торцевое 3"</td><td>Уплотнение торцевое 3"</td><tr>
+                        <tr><td>Тип уплотнения 2</td><td>Уплотнение торцевое 2"</td><td>Уплотнение торцевое 2"</td><td>Уплотнение торцевое 2"</td><td>Уплотнение торцевое 2"</td><td>Уплотнение торцевое 2"</td><td>Уплотнение торцевое 3"</td></tr>
+                        <tr><td>Общая длина L (мм)</td><td>200</td><td>200</td><td>200</td><td>200</td><td>200</td><td>200</td></tr>
+                    </tbody>
+                </table>
+            </div>
+                <div class="schema-block">
+                    <img src="../assets/image/directory-schemes/2.10.png" alt="Схема переходника Р-Р" onclick="openImage(this.src)">
+                    <p class="table-note">Примечание: Нажмите на изображение для увеличения.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ООО "СЗЛК Производство"</h3>
+                    <p>Профессиональная механическая обработка металлических изделий и поставка запасных частей для нефтегазового оборудования с 2016 года.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Нефтеюганск, ул. Мира, стр. 8/1</p>
+                    <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@szlk-production.ru</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Быстрые ссылки</h3>
+                    <a href="../index.html">Главная</a>
+                    <a href="../catalog.html">Каталог</a>
+                    <a href="../services.html">Услуги</a>
+                    <a href="../about.html">О компании</a>
+                    <a href="../clients.html">Клиенты</a>
+                    <a href="../contacts.html">Контакты</a>
+                    <a href="../registration.html">Заявка</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2016–2025 ООО "СЗЛК Производство". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        function openImage(src) {
+            const modal = document.createElement('div');
+            modal.style.position = 'fixed';
+            modal.style.top = '0';
+            modal.style.left = '0';
+            modal.style.width = '100%';
+            modal.style.height = '100%';
+            modal.style.backgroundColor = 'rgba(0,0,0,0.9)';
+            modal.style.zIndex = '9999';
+            modal.style.display = 'flex';
+            modal.style.alignItems = 'center';
+            modal.style.justifyContent = 'center';
+            modal.style.cursor = 'pointer';
+            
+            const img = document.createElement('img');
+            img.src = src;
+            img.style.maxWidth = '90%';
+            img.style.maxHeight = '90%';
+            img.style.borderRadius = '10px';
+            img.style.border = '2px solid #ff0000';
+            
+            modal.appendChild(img);
+            document.body.appendChild(modal);
+            
+            modal.onclick = function() { modal.remove(); };
+        }
+    </script>
+</body>
+</html>
